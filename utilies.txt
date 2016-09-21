@@ -1,0 +1,10 @@
+"http://maps.google.com/maps/api/geocode/json?sensor=false&address=" + escape(value, "url")
+
+"http://www.purl.org/inha/agorha/002/" + cells['UNIQUE_KEY'].value
+value.match(/.*(\d{2} [a-z]* \d{4}).*/)[0] + value.match(/.*(\d{4}).*/)[0]
+replace(value,/[\,\;\:\.\?\/\!\=\+\"\'\-\(\)\[\]]/," ")
+
+value.parseJson().results[0].geometry.location.lat
+value.parseJson().results[0].geometry.location.lng
+
+http://refine.codefork.com/reconcile/viaf
